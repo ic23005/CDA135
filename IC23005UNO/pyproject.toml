@@ -1,0 +1,53 @@
+# 2025 - Universidad de El Salvador - Ingenieria en Desarrollo de Software
+# Cálculo Numérico para el Desarrollo de Aplicaciones
+# Examen Corto 1 - Grupo Teórico 2
+
+[build-system]
+# Especifica el backend de construcción y sus requerimientos.
+# Pip y otros frontends leerán esto para saber cómo construir tu paquete.
+requires = ["setuptools>=61.0", "wheel"] # Requiere setuptools (versión mínima recomendada) y wheel
+build-backend = "setuptools.build_meta" # Indica que usemos setuptools para construir
+
+[project]
+# Metadatos principales del proyecto (equivalente a los argumentos de setup())
+name = "IC23005UNO"
+dynamic = ["version"] # Obtenemos la versión de manera dinámica __init__.py
+description = "Librería para resolver ecuaciones lineales y no lineales con diferentes metodos."
+readme = "README.md" # Especifica el archivo README (automáticamente detecta el tipo)
+requires-python = ">=3.7" # Versión mínima de Python para el correcto funcionamiento de la librería
+license = { file = "LICENSE" } # Especifica el archivo de licencia
+keywords = ["numerical methods", "linear algebra", "root finding", "scipy", "numpy", "math"]
+authors = [
+  { name = "Erick Iraheta", email = "ic23005@ues.edu.sv" }
+]
+maintainers = [
+  { name = "Erick Iraheta", email = "ic23005@ues.edu.sv" }
+]
+classifiers = [ # Clasificadores de PyPI tomado de https://pypi.org/classifiers
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Operating System :: OS Independent",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Science/Research",
+    "Topic :: Scientific/Engineering :: Mathematics",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+]
+
+dependencies = [
+  "numpy>=1.18" # Dependencias mínimas necesarias para utilizar nuestra la librería
+]
+
+[project.urls]
+Repository = "https://github.com/tu_usuario/numerilib-project" # URL donde se aloja nuestra líbreria
+
+[tool.setuptools.dynamic]
+version = { attr = "IC23005UNO.__version__" } # Configuración para leer la versión de forma dinámica
+
+[tool.setuptools.packages]
+find = { namespaces = false } # Busca paquetes en la raíz (donde está pyproject.toml)
