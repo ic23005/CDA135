@@ -44,7 +44,7 @@ dependencies = [
 ]
 
 [project.urls]
-Repository = "https://github.com/tu_usuario/numerilib-project" # URL donde se aloja nuestra líbreria
+Repository = "https://github.com/ic23005/CDA135/tree/main/IC23005UNO" # URL donde se aloja nuestra líbreria
 
 [tool.setuptools.dynamic]
 version = { attr = "IC23005UNO.__version__" } # Configuración para leer la versión de forma dinámica

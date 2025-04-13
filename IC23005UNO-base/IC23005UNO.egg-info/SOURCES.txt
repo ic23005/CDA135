@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+IC23005UNO/__init__.py
+IC23005UNO/sistemas_lineales.py
+IC23005UNO/sistemas_no_lineales.py
+IC23005UNO.egg-info/PKG-INFO
+IC23005UNO.egg-info/SOURCES.txt
+IC23005UNO.egg-info/dependency_links.txt
+IC23005UNO.egg-info/requires.txt
+IC23005UNO.egg-info/top_level.txt
