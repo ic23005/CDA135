@@ -85,7 +85,7 @@ print_solution("Método de Eliminación de Gauss-Jordan", x_gj, A_lin, b_lin_col
 
 start = time.perf_counter()
 # Cramer necesita b 1D internamente, pero podemos pasar la columna igual
-x_cramer = ic.regla_cramer(A_lin, b_lin_col)
+x_cramer = ic.regla_crammer(A_lin, b_lin_col)
 end = time.perf_counter()
 # Advertencia: Cramer es lento, el tiempo puede ser mayor
 print_solution("Regla de Cramer", x_cramer, A_lin, b_lin_col, x_esperado_lin, time_taken=end-start)
@@ -93,21 +93,14 @@ print_solution("Regla de Cramer", x_cramer, A_lin, b_lin_col, x_esperado_lin, ti
 start = time.perf_counter()
 P, L, U = ic.descomposicion_lu(A_lin)
 time_decomp = time.perf_counter() - start
-# x_lu = None
-# time_solve = 0
 if P is not None:
     print("\n--- Descomposición LU ---")
     print("P:\n", P)
     print("L:\n", L)
     print("U:\n", U)
     print(f"Verificación ||PA - LU||: {np.linalg.norm(P @ A_lin - L @ U):.2e}")
-    # start_solve = time.perf_counter()
-    # x_lu = ic.solve_lu(P, L, U, b_lin_col)
-    # time_solve = time.perf_counter() - start_solve
 else:
      print("\n--- Descomposición LU Falló ---")
-print_solution("Solución usando LU", A_lin, b_lin_col, x_esperado_lin, time_taken=time_decomp)
-#print_solution("Solución usando LU", x_lu, A_lin, b_lin_col, x_esperado_lin, time_taken=time_decomp + time_solve)
 
 print("\n=====================================================")
 print("SISTEMAS DE ECUACIONES LINEALES ITERATIVOS")

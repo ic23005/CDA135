@@ -1,6 +1,6 @@
 Metadata-Version: 2.4
 Name: IC23005UNO
-Version: 1.0.0
+Version: 1.0.1
 Summary: Librería para resolver ecuaciones lineales y no lineales con diferentes metodos.
 Author-email: Erick Iraheta <ic23005@ues.edu.sv>
 Maintainer-email: Erick Iraheta <ic23005@ues.edu.sv>
@@ -70,7 +70,7 @@ License: =======================================================================
         NINGÚN CASO LOS AUTORES O TITULARES DEL COPYRIGHT SERÁN RESPONSABLES DE NINGUNA RECLAMACIÓN, DAÑO U OTRA
         RESPONSABILIDAD, YA SEA EN UNA ACCIÓN DE CONTRATO, AGRAVIO O DE OTRO MODO, QUE SURJA DE, O EN CONEXIÓN
         CON EL SOFTWARE O EL USO U OTROS TRATOS EN EL SOFTWARE.
-Project-URL: Repository, https://github.com/tu_usuario/numerilib-project
+Project-URL: Repository, https://github.com/ic23005/CDA135/tree/main/IC23005UNO
 Keywords: numerical methods,linear algebra,root finding,scipy,numpy,math
 Classifier: License :: OSI Approved :: MIT License
 Classifier: Programming Language :: Python :: 3.7
@@ -102,7 +102,7 @@ Dynamic: license-file
 • **Sistemas de ecuaciones lineales :**
     ○ Eliminación de Gauss (`eliminacion_gauss_`)
     ○ Eliminación de Gauss-Jordan (`eliminacion_gauss_jorda`)
-    ○ Regla de Cramer (`regla_cramer`)
+    ○ Regla de Crammer (`regla_cramer`)
     ○ Descomposición LU (`descomposicion_lu`)
     ○ Método de Jacobi (`metodo_jacobi`)
     ○ Método de Gauss-Seidel (`metodo_gauss_seidel`)
