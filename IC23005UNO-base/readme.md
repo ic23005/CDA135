@@ -9,7 +9,7 @@
 • **Sistemas de ecuaciones lineales :**
     ○ Eliminación de Gauss (`eliminacion_gauss_`)
     ○ Eliminación de Gauss-Jordan (`eliminacion_gauss_jorda`)
-    ○ Regla de Cramer (`regla_cramer`)
+    ○ Regla de Crammer (`regla_cramer`)
     ○ Descomposición LU (`descomposicion_lu`)
     ○ Método de Jacobi (`metodo_jacobi`)
     ○ Método de Gauss-Seidel (`metodo_gauss_seidel`)

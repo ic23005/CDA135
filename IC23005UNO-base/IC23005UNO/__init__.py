@@ -3,7 +3,7 @@ IC23005UNO: Librería para resolver ecuaciones lineales y no lineales con difere
 """
 
 # Define la versión de la librería
-__version__ = "1.0.0" # Incrementa la versión por el cambio estructural
+__version__ = "1.0.1" # Incrementa la versión por el cambio en la llamada de los métodos: metodo_gauss_jordan y regla_crammer 
 
 # Importa las funciones desde los módulos
 from .sistemas_lineales import (
@@ -27,7 +27,7 @@ __all__ = [
     'descomposicion_lu',
     'metodo_jacobi',
     'metodo_gauss_seidel',
-    # Nonlinear Solvers
+    # Sistemas NO Lineales
     'metodo_biseccion',
     # Version
     '__version__',
