@@ -50,7 +50,7 @@ def eliminacion_gauss(A, b):
         return None
 
 
-def eliminacion_gauss_jorda(A, b):
+def eliminacion_gauss_jordan(A, b):
     """
     Resuelve Ax = b usando el Método de Eliminación de Gauss-Jordan.
     """
@@ -83,7 +83,7 @@ def eliminacion_gauss_jorda(A, b):
         x = Ab[:, n].reshape(-1, 1)
         return x
     except Exception as e:
-        print(f"Error en eliminacion_gauss_jorda: {e}")
+        print(f"Error en eliminacion_gauss_jordan: {e}")
         return None
 
 
