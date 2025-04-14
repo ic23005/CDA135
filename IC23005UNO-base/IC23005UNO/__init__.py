@@ -9,7 +9,7 @@ __version__ = "1.0.0" # Incrementa la versión por el cambio estructural
 from .sistemas_lineales import (
     eliminacion_gauss,
     eliminacion_gauss_jordan,
-    regla_cramer,
+    regla_crammer,
     descomposicion_lu,
     metodo_jacobi,
     metodo_gauss_seidel,
